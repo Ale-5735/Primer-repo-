@@ -1687,3 +1687,48 @@
     padding: 24px 16px;
   }
 }
+
+/* ==========================================================================
+   INFO CARDS SECTION
+   ========================================================================== */
+.info-cards-section {
+  padding: 20px 0 80px;
+}
+
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.info-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.info-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.info-card-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .info-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

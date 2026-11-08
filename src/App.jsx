@@ -6,6 +6,7 @@ import VibeSimulator from './components/VibeSimulator'
 import CourseSyllabus from './components/CourseSyllabus'
 import StudentChecklist from './components/StudentChecklist'
 import VibeMeter from './components/VibeMeter'
+import InfoCards from './components/InfoCards'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -105,6 +106,7 @@ export default function App() {
           onReset={handleReset}
         />
         <VibeMeter />
+        <InfoCards />
       </main>
 
       <Footer />
